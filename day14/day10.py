@@ -69,7 +69,7 @@ def part1(input_lengths):
     return list[0] * list[1]
 
 
-def part2(input_lengths):
+def day10(input_lengths):
     """ Calculate the hash for the given input string """
     input_lengths = [ord(c) for c in input_lengths]
     input_lengths += [17, 31, 73, 47, 23]
@@ -88,6 +88,6 @@ def part2(input_lengths):
     return hash_string
 
 
-input_lengths = open("input.txt").read()
-print("Multiplication: %d" % part1(input_lengths.split(",")))
-print("Hash: %s" % part2(input_lengths))
+# input_lengths = open("input.txt").read()
+# print("Multiplication: %d" % part1(input_lengths.split(",")))
+# print("Hash: %s" % part2(input_lengths))
